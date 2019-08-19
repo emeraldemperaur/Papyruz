@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="secondarySpinnerAdapter"
+            type="android.widget.ArrayAdapter"/>
+
+        <variable
+            name="secondaryClickHandlers"
+            type="iot.empiaurhouse.papyruz.view.MainActivity.MainActivityClickHandlers"/>
+
+
+    </data>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context=".view.MainActivity"
+        android:orientation="vertical"
+        tools:showIn="@layout/activity_main">
+
+
+
+        <TextView
+
+            android:elevation="13dp"
+            android:id="@+id/CodexTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="0dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/kaushanscriptregular"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:visibility="visible"
+            android:background="@color/colorPrimary"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserratmedium"
+            android:text="@string/CodexTitle"
+            android:textColor="@color/colorPrimary"
+            android:textSize="17sp"
+            android:visibility="visible"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="2dp"
+
+
+            />
+
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:elevation="13dp"
+            android:id="@+id/spinner"
+            android:layout_width="395dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            app:adapter="@{secondarySpinnerAdapter}"
+            android:onItemSelected="@{secondaryClickHandlers::onSelectItem}"
+            android:layout_height="wrap_content"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvCodex"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/white"
+            />
+
+
+
+
+    </LinearLayout>
+</layout>

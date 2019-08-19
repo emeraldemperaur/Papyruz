@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+        <variable
+            name="clickHandler"
+            type="iot.empiaurhouse.papyruz.view.AddAndEditActivity.AddAndEditActivityClickHandlers"/>
+        <variable
+            name="codex"
+            type="iot.empiaurhouse.papyruz.model.Codex"/>
+
+    </data>
+
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editor_activity"
+    tools:context=".view.AddAndEditActivity"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    >
+
+
+
+    <TextView
+
+        android:id="@+id/EditorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingStart="12dp"
+        android:paddingEnd="0dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="5dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/kaushanscriptregular"
+        android:text="@string/edit_codex"
+        android:textColor="@color/colorPrimary"
+        android:textSize="29sp"
+        android:visibility="visible"
+
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"/>
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/montserratlight"
+        android:text="@string/greek_letters"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:visibility="visible"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="13dp"
+
+
+        />
+
+
+
+    <EditText
+
+        android:layout_marginTop="5dp"
+        android:id="@+id/codexName"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="3"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/montserratthin"
+        android:hint="@string/codex_name_placeholder"
+        android:inputType="textPersonName"
+        android:text="@={codex.codexName}"
+        android:maxLength="23"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:textSize="26sp"
+        />
+
+
+
+    <EditText
+        android:maxLength="10"
+        android:id="@+id/codexValue"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="3"
+        android:textSize="26sp"
+        android:inputType="number"
+        android:fontFamily="@font/montserratthin"
+        android:hint="@string/value_placeholder"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:text="@={codex.unitValue}"
+
+        />
+
+    <EditText
+        android:maxLength="10"
+        android:id="@+id/codexAmount"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="3"
+        android:textSize="26sp"
+        android:inputType="textNoSuggestions"
+        android:fontFamily="@font/montserratthin"
+        android:hint="@string/amount_placeholder"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:text="@={codex.unitPrice}"
+        />
+
+
+    <EditText
+        android:id="@+id/codexText"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:ems="3"
+        android:lines="8"
+        android:minLines="5"
+        android:maxLines="15"
+        android:gravity="top|start"
+        android:textSize="26sp"
+        android:inputType="textMultiLine"
+        android:fontFamily="@font/montserratthin"
+        android:hint="@string/enter_text_placeholder"
+        android:textColorHint="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
+        android:text="@={codex.codexText}"
+        />
+
+
+    <Button
+        android:id="@+id/codexButton"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="21dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/montserratsemibold"
+        android:padding="2dp"
+        android:text="@string/update_codex"
+        android:textColor="@color/colorAccent"
+        android:textSize="17sp"
+        android:onClick="@{clickHandler::onSubmitButtonClicked}"
+        />
+
+
+
+
+
+
+</LinearLayout>
+</layout>

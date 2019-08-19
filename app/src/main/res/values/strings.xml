@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Papyruz</string>
+    <string name="eh_logo">EH Logo</string>
+    <string name="papyruz_logo">Papyruz Logo</string>
+    <string name="Greeting1">Good Morning</string>
+    <string name="Greeting2">Good Afternoon</string>
+    <string name="Greeting3">Good Evening</string>
+    <string name="Greeting4">Carpe Noctem</string>
+    <string name="SignIn_Title">Please enter your profile information</string>
+    <string name="EmailError">Invalid Email</string>
+    <string name="NameError">Username Required</string>
+    <string name="name_placeholder">Username</string>
+    <string name="email_placeholder">Email</string>
+    <string name="value_placeholder">Value</string>
+    <string name="amount_placeholder">Amount</string>
+    <string name="enter_text_placeholder">Enter Codex Text</string>
+    <string name="Continue_Button">Continue</string>
+    <string name="CodexTitle">CODEX</string>
+    <string name="person_app_name_holder">User\'s Papyruz</string>
+    <string name="codexicon">CodexIcon</string>
+    <string name="edit_codex">Edit Codex</string>
+    <string name="add_codex">Add Codex</string>
+    <string name="submit_codex">SUBMIT</string>
+    <string name="update_codex">UPDATE</string>
+    <string name="greek_letters">α\u0020\u0020\u0020\u0020  β\u0020\u0020\u0020\u0020  γ\u0020\u0020\u0020\u0020  δ\u0020\u0020\u0020\u0020  ε</string>
+    <string name="codex_name_placeholder">Codex Name</string>
+
+
+</resources>
