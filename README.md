@@ -7,10 +7,7 @@
 
 ### Related Links
 
-**Portfolio URL >_** https://www.emekaegwim.com/portfolios/papyruz/
-
-
-**Google Play Store >_** https://play.google.com/store/apps/details?id=iot.empiaurhouse.papyruz
+**Portfolio URL >_** [https://mekaegwim.ca/portfolio](https://mekaegwim.ca/portfolio)
 
 &nbsp;
 
